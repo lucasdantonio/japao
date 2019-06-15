@@ -1,0 +1,51 @@
+
+.welcome-card ion-img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+.abso {
+  position: absolute; 
+  top: 5%;
+  left: 5%;
+  color: #FFF;
+  font-size: 14px;
+  font-family:courier,arial,helvetica;
+  background-color: #e5053a;
+  padding: 5px;
+  border-radius: 17px;
+}
+.abso2 {
+  position: absolute; 
+  top: 20%;
+  left: 5%;
+  color: #FFF;
+  font-size: 17px;
+  font-family:courier,arial,helvetica;
+  background-color: #e5053a;
+  padding: 5px;
+  border-radius: 17px;
+}
+.slidesPromo img {
+  width: 100%;
+  height: 210px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+.noNo {
+  margin: -5px -10px 0 -20px;
+  padding: 0;
+}
+
+.maisItens {
+  font-size: 13px;
+  text-align: end;
+  position: absolute;
+  top: 0%;
+  left: 80%;
+}
+.listaItem {
+  font-size: 15px;
+}

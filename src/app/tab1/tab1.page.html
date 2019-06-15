@@ -1,0 +1,118 @@
+<ion-header>
+ 
+    <!--
+    <ion-title>
+      Tab One
+    </ion-title>
+    -->
+  <ion-toolbar color="dark">
+    <ion-searchbar animated placeholder="Pesquisar"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Segunda, 10 de junho</ion-label>
+    <ion-badge slot="end" color="primary">Promoções do dia</ion-badge>
+  </ion-item>
+  
+  <ion-slides pager="true" [options]="slideOpts" class="slidesPromo">
+    <ion-slide>
+      <h2 class="abso">Pão de queijo</h2>
+      <h2 class="abso2">R$ 3,00 100g</h2>
+      <img src="../../assets/slide1.jpg"/>
+    </ion-slide>
+    <ion-slide>
+      <h2 class="abso">Pão doce</h2>
+      <h2 class="abso2">R$ 10,00 100g</h2>
+      <img src="../../assets/slide3.jpg"/>
+    </ion-slide>
+    <ion-slide>
+      <h2 class="abso">Pão de queijo mineiro</h2>
+      <h2 class="abso2">R$ 3,50 100g</h2>
+      <img src="../../assets/slide2.jpg"/>
+    </ion-slide>
+  </ion-slides>
+  <ion-list lines="none">
+    <ion-list-header>
+      <ion-label color="primary">Destaques</ion-label>
+    </ion-list-header>
+    <ion-item href="#" id="myBtn">
+      <ion-label>Baguete</ion-label>
+    </ion-item>
+    <ion-item href="#">
+      <ion-label>Pão francês</ion-label>
+    </ion-item>
+    <ion-item href="#">
+      <ion-label>Pão de queijo</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-list lines="none">
+    <ion-list-header>
+      <ion-label color="primary">Salgados</ion-label>
+    </ion-list-header>
+    <ion-item href="#">
+      <ion-label class="listaItem">Coxinha</ion-label>
+    </ion-item>
+    <ion-item href="#">
+      <ion-label class="listaItem">Pastel</ion-label>
+    </ion-item>
+    <ion-item href="#">
+      <ion-label class="listaItem">Pizza</ion-label>
+    </ion-item>
+    <ion-item href="#" class="maisItens">
+      <ion-label color="tertiary">Ver mais</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-list lines="none">
+    <ion-list-header>
+      <ion-label color="primary">Doces</ion-label>
+    </ion-list-header>
+    <ion-item href="#">
+      <ion-label class="listaItem">Pão doce</ion-label>
+    </ion-item>
+    <ion-item href="#">
+      <ion-label class="listaItem">Bolo de chocolate</ion-label>
+    </ion-item>
+    <ion-item href="#">
+      <ion-label class="listaItem">Doce de leite</ion-label>
+    </ion-item>
+    <ion-item href="#" class="maisItens">
+      <ion-label color="tertiary">Ver mais</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-list lines="none">
+    <ion-list-header>
+      <ion-label color="primary">Café</ion-label>
+    </ion-list-header>
+    <ion-item href="#">
+      <ion-label class="listaItem">Café puro</ion-label>
+    </ion-item>
+    <ion-item href="#">
+      <ion-label class="listaItem">Café com leite</ion-label>
+    </ion-item>
+    <ion-item href="#">
+      <ion-label class="listaItem">Cappuccino</ion-label>
+    </ion-item>
+    <ion-item href="#" class="maisItens">
+      <ion-label color="tertiary">Ver mais</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-list lines="none">
+    <ion-list-header>
+      <ion-label color="primary">Outros</ion-label>
+    </ion-list-header>
+    <ion-item href="#">
+      <ion-label class="listaItem">Queijo</ion-label>
+    </ion-item>
+    <ion-item href="#">
+      <ion-label class="listaItem">Presunto</ion-label>
+    </ion-item>
+    <ion-item href="#">
+      <ion-label class="listaItem">Leite desnatado</ion-label>
+    </ion-item>
+    <ion-item href="#" class="maisItens">
+      <ion-label color="tertiary">Ver mais</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
