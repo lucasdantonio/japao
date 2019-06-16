@@ -3,14 +3,6 @@
 
 /** Ionic CSS Variables **/
 :root {
-  /** japp **/
-  --ion-color-japp: #e01d25;
-  --ion-color-japp-rgb: 224,29,37;
-  --ion-color-japp-contrast: #ffffff;
-  --ion-color-japp-contrast-rgb: 255,255,255;
-  --ion-color-japp-shade: #c51a21;
-  --ion-color-japp-tint: #e3343b;
-
   /** primary **/
   --ion-color-primary: #e5053a;
   --ion-color-primary-rgb: 229,5,58;
@@ -82,4 +74,13 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+}
+.ion-color-japp {
+    /** japp **/
+    --ion-color-base: #e01d25;
+    --ion-color-base-rgb: 224,29,37;
+    --ion-color-contrast: #ffffff;
+    --ion-color-contrast-rgb: 255,255,255;
+    --ion-color-shade: #c51a21;
+    --ion-color-tint: #e3343b;
 }

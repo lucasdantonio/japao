@@ -1,9 +1,53 @@
 <ion-header>
+  <!--
   <ion-toolbar>
     <ion-title>login</ion-title>
   </ion-toolbar>
+  -->
 </ion-header>
 
-<ion-content>
-
+<ion-content color="japp" scroll-y="false" scroll-x="false">
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        <img src="../../assets/logo3.png">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col align-self-center>
+        <ion-icon name="ios-person" class="iconeLogin"></ion-icon>
+      </ion-col>
+      <ion-col size="10">
+        <ion-item color="japp">
+          <ion-label position="floating">Usuário</ion-label>
+          <ion-input type="text" required></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col align-self-center>
+        <ion-icon name="ios-lock" class="iconeLogin"></ion-icon>
+      </ion-col>
+      <ion-col size="10">
+        <ion-item color="japp">
+          <ion-label position="floating">Senha</ion-label>
+          <ion-input type="password" required></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="5">
+          <ion-button color="japp" class="btnReg">Registrar</ion-button>
+      </ion-col>
+      <ion-col size="2" align-self-center>
+          <ion-text color="light">
+            - OU -
+          </ion-text>
+      </ion-col>
+      <ion-col size="5">
+          <ion-button color="light" class="btnEntrar" (click)="navigateToInicio()">Entrar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
 </ion-content>
