@@ -2,10 +2,13 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' },
+  //{ path: '', loadChildren: './tabs/tabs.module#TabsPageModule' },
+  { path: '', loadChildren: './abertura/abertura.module#AberturaPageModule' },
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
   { path: 'registro', loadChildren: './registro/registro.module#RegistroPageModule' },
-  { path: 'sample-modal', loadChildren: './sample-modal/sample-modal.module#SampleModalPageModule' }
+  //{ path: 'abertura', loadChildren: './abertura/abertura.module#AberturaPageModule' }
+  { path: 'tabs', loadChildren: './tabs/tabs.module#TabsPageModule' }
+
 ];
 @NgModule({
   imports: [
