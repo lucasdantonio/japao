@@ -4,7 +4,7 @@
 
 ### Apresentação: 
 
-https://docs.google.com/presentation/d/1YQ06t2hTZxyA-s0ye9Nj4h3XtaLwxRV7RGIye9R2msY/edit#slide=id.g5b68bd2287_2_2
+https://docs.google.com/presentation/d/1YQ06t2hTZxyA-s0ye9Nj4h3XtaLwxRV7RGIye9R2msY/edit?usp=sharing
 
 ### Imagens(logos e telas): 
 
