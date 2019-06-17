@@ -8,7 +8,7 @@ https://docs.google.com/presentation/d/1YQ06t2hTZxyA-s0ye9Nj4h3XtaLwxRV7RGIye9R2
 
 ### Imagens(logos e telas): 
 
-https://imgur.com/a/c2Q4MAY
+https://imgur.com/a/i9HJvpK
 
 
 ### Projeto desenvolvido por
