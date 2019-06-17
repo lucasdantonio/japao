@@ -1,9 +1,81 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="japp">
+    <ion-icon class="arrowBack" name="arrow-back" (click)="navigateToLogin()"></ion-icon>
+    <!--
     <ion-title>registro</ion-title>
+    -->
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="japp" scroll-y="false" scroll-x="false">
+  <ion-grid>
+    <!-- Nome -->
+    <ion-row>
+      <ion-col>
+        <ion-item color="japp" class="inputRegistro">
+          <ion-label position="stacked">Nome</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
 
+    <!-- Usuário -->
+    <ion-row>
+      <ion-col>
+        <ion-item color="japp" class="inputRegistro">
+          <ion-label position="stacked">Usuário</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <!-- Senha -->
+    <ion-row>
+      <ion-col>
+        <ion-item color="japp" class="inputRegistro">
+          <ion-label position="stacked">Senha</ion-label>
+          <ion-input inputmode="password" type="password"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <!-- Data de nascimento -->
+    <ion-row>
+      <ion-col>
+        <ion-item color="japp" class="inputRegistro">
+          <ion-label position="stacked">Data de nascimento:</ion-label>
+          <ion-datetime doneText="Confirmar" cancelText="Cancelar" displayFormat="DD de MMM, YYYY" value="2019-06-17T13:47:20.789"></ion-datetime>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <!-- Endereço -->
+    <ion-row>
+      <ion-col>
+        <ion-item color="japp" class="inputRegistro">
+          <ion-label position="stacked">Endereço:</ion-label>
+          <ion-input type="address"></ion-input>
+        </ion-item>
+      </ion-col> 
+    </ion-row>
+
+    <!-- Endereço -->
+    <ion-row>
+      <ion-col>
+        <ion-item color="japp" class="inputRegistro">
+          <ion-label position="stacked">Adicionar foto</ion-label>
+          <ion-input type="url"></ion-input>
+        </ion-item>
+      </ion-col> 
+    </ion-row>
+
+    <!-- Botão de registrar -->
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col>
+        <ion-button color="light" (click)="navigateToInicio()" class="btnRegistrar">Registrar</ion-button>
+      </ion-col> 
+      <ion-col></ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

@@ -15,6 +15,9 @@ export class LoginPage implements OnInit {
 
   navigateToInicio(): void {
     this.router.navigate(['tabs/tab1']);
- }
+  }
 
+  navigateToReg(): void {
+    this.router.navigate(['registro']);
+  }
 }

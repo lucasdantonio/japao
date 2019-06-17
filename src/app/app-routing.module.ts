@@ -8,6 +8,8 @@ const routes: Routes = [
   { path: 'registro', loadChildren: './registro/registro.module#RegistroPageModule' },
   //{ path: 'abertura', loadChildren: './abertura/abertura.module#AberturaPageModule' }
   { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' }
+ 
+  
 
 ];
 @NgModule({
