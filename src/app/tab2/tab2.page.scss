@@ -7,3 +7,38 @@
 .totalCarrinho{
     margin: 5px 0 0 57%;
 }
+.iconCarrinho {
+    font-size: 29px;
+}
+.entregaData {
+    width: 160px;
+    font-style: italic;
+}
+.entregaHorario {
+    width: 130px;
+    font-style: italic;
+}
+.entregaEndereco {
+    margin-left: 15px;
+    width: 550px;
+    font-style: italic;
+}
+.radioCarrinho {
+    border: 2px solid #e01d25;
+    border-radius: 50px;
+}
+.pagCartao {
+    width: 200px;
+}
+.pagDinheiro {
+    width: 200px;
+}
+.data {
+    color: orange;
+}
+.horario {
+    color: green;
+}
+.endereco {
+    color: tomato;
+}
