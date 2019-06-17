@@ -1,1 +1,21 @@
-
+.boxPedidos {
+    height: 100px;
+}
+.boxPreco {
+    font-size: 26px;
+    position: absolute;
+    top: 30%;
+    left: 60%;
+}
+.boxSubTitulo {
+    color: gray;
+    font-size: 13px;
+}
+.boxProgresso {
+    width: 350px;
+    margin-top: 0px;
+}
+.boxProgresso h5 {
+    position: absolute;
+    font-size: 10px;
+}

@@ -1,24 +1,176 @@
-<ion-header>
+<ion-header no-border>
+  <!--
   <ion-toolbar>
     <ion-title>
       Pedidos
     </ion-title>
   </ion-toolbar>
+  -->
+  <ion-toolbar color="dark">
+    <ion-searchbar animated placeholder="Pesquisar"></ion-searchbar>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    <ion-card>
-      <ion-card-content>
-        <ion-list>
-          <ion-list-header>
-            <ion-label>Pedidos</ion-label>
-          </ion-list-header> 
-          <ion-item>
-              <ion-label color="japp">
-                Segunda-feira 10/
-              </ion-label>
-          </ion-item>
+  <ion-grid no-padding no-margin>
+    <ion-row style="opacity: 0.6;">
+      <ion-col>
+        <ion-item lines="none">
+          <ion-icon name="eye"
+          style="color: indianred; font-size: 25px;"></ion-icon>
+          <ion-label style="color: indianred; font-size: 12px;">
+            Em análise
+          </ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item lines="none">
+          <ion-icon name="checkmark-circle-outline" 
+          style="color: crimson; font-size: 25px;"></ion-icon>
+          <ion-label style="color: crimson; font-size: 12px;">
+            Confirmado
+          </ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item lines="none">
+          <ion-icon name="log-in" 
+          style="color: maroon; font-size: 25px;"></ion-icon>
+          <ion-label style="color: maroon; font-size: 12px;">
+            Entregue
+          </ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col no-padding no-margin>
+        <ion-item color="light">
+          <ion-label style="color: black; margin-bottom: -5px; font-size: 14px;">
+            Segunda, 17 de junho
+          </ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row color="light">
+      <ion-col no-padding no-margin>
+        <ion-list lines="none">
+          <ion-item-sliding>
+
+          <!-- CONTEÚDO PEDIDOS 2.1 -->
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <ion-icon name="eye" style="font-size: 50px; color: indianred;"></ion-icon>
+              </ion-thumbnail>
+              <div class="boxPedidos">
+                <h4>Pedido #3</h4>
+                <div class="boxPreco" style="color: indianred;">
+                  R$ 6,50
+                </div>
+                <div class="boxSubTitulo">
+                  <p no-margin>
+                    <strong>Endereço:</strong> Av. Eduardo D..
+                  </p>
+                  <p no-margin>
+                    <strong>Data de entrega:</strong> 20/06
+                  </p>
+                  <!--
+                  <div class="boxProgresso">
+                    <h5>Pedido chegará em breve</h5>
+                    <ion-progress-bar value="0.5"></ion-progress-bar>
+                  </div>
+                  -->
+                </div>
+              </div>
+            </ion-item>
+            <ion-item-options side="end">
+              <ion-item-option color="japp" (click)="unread(item)">
+                <ion-icon name="eye" style="font-size: 31px;"></ion-icon>
+              </ion-item-option>
+            </ion-item-options>
+          </ion-item-sliding>
         </ion-list>
-      </ion-card-content>
-    </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col no-padding no-margin>
+        <ion-item color="light">
+          <ion-label style="color: black; margin-bottom: -5px; font-size: 14px;">
+            Segunda, 10 de junho
+          </ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col no-padding no-margin>
+        <ion-list lines="none">
+          <ion-item-sliding>
+
+            <!-- CONTEÚDO PEDIDOS 2.1 -->
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <ion-icon name="checkmark-circle-outline" style="font-size: 43px; color: crimson;"></ion-icon>
+              </ion-thumbnail>
+              <div class="boxPedidos">
+                <h4>Pedido #2</h4>
+                <div class="boxPreco" style="color: crimson;">
+                  R$ 8,00
+                </div>
+                <div class="boxSubTitulo">
+                  <p no-margin>
+                    <strong>Endereço:</strong> Av. Eduardo D..
+                  </p>
+                  <p no-margin>
+                    <strong>Data de entrega:</strong> 19/06
+                  </p>
+                  <!--
+                  <div class="boxProgresso">
+                    <h5>Pedido chegará em breve</h5>
+                    <ion-progress-bar value="0.5"></ion-progress-bar>
+                  </div>
+                  -->
+                </div>
+              </div>
+            </ion-item>
+            <ion-item-options side="end">
+              <ion-item-option color="japp" (click)="unread(item)">
+                <ion-icon name="eye" style="font-size: 31px;"></ion-icon>
+              </ion-item-option>
+            </ion-item-options>
+          </ion-item-sliding>
+          <ion-item-sliding>
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <ion-icon name="log-in" style="font-size: 42px; color: maroon;"></ion-icon>
+              </ion-thumbnail>
+              <div class="boxPedidos">
+                <h4>Pedido #1</h4>
+                <div class="boxPreco" style="color: maroon;">
+                  R$ 11,25
+                </div>
+                <div class="boxSubTitulo">
+                  <p no-margin>
+                    <strong>Endereço:</strong> Av. Eduardo D..
+                  </p>
+                  <p no-margin>
+                    <strong>Data de entrega:</strong> 16/06
+                  </p>
+                </div>
+                <!-- 
+                <div class="boxProgresso">
+                    <h5>Pedido entregue</h5>
+                  <ion-progress-bar value="1"></ion-progress-bar>
+                </div>
+                -->
+              </div>
+            </ion-item>
+            <ion-item-options side="end">
+              <ion-item-option color="japp" (click)="unread(item)">
+                <ion-icon name="eye" style="font-size: 31px;"></ion-icon>
+              </ion-item-option>
+            </ion-item-options>
+         </ion-item-sliding>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
